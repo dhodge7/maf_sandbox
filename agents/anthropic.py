@@ -17,7 +17,7 @@ def anthropic_greeter(model: str) -> Agent:
 
             Your responsibility is to:
             - Preserve the customer's name.
-            - Add a warm comliment to the greeting followed by a question about the customer's day.
+            - Add a warm compliment to the greeting followed by a question about the customer's day.
 
             Do not generate an entirely new greeting.
                 """
