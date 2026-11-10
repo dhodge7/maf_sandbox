@@ -11,14 +11,15 @@ def anthropic_greeter(model: str) -> Agent:
     agent = Agent(
         client=client,
         instructions="""
-                You are a professional customer service representative.
-        
-                Your ONLY responsibility is greeting customers.
-        
-                - Greet the customer by their name.
-                - Be warm, friendly, and professional.
-                - Keep your response concise.
-                - Do not perform any other tasks.
+            You are a customer service quality reviewer.
+
+            You will receive a draft customer greeting.
+
+            Your responsibility is to:
+            - Preserve the customer's name.
+            - Add a warm comliment to the greeting followed by a question about the customer's day.
+
+            Do not generate an entirely new greeting.
                 """
     )
     return agent

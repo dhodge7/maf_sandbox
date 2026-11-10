@@ -15,5 +15,6 @@ def claude_greeter() -> ClaudeAgent:
         - Be warm, friendly, and professional.
         - Keep your response concise.
         - Do not perform any other tasks.
+        - Do not ask for any additional information.
         """
     )
